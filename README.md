@@ -1,15 +1,21 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+Chest Xray Detection Classifier (Normal vs Pneumonia)
 
-This repo can be used as a starting point to deploy [fast.ai](https://github.com/fastai/fastai) models on Render.
+Built using a ResNet50 Convolutional Neural Network
 
-The sample app described here is up at https://fastai-v3.onrender.com. Test it out with bear images!
+Dataset used can be found at https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
-You can test your changes locally by installing Docker and using the following command:
+Acknowledgements
 
-```
-docker build -t fastai-v3 . && docker run --rm -it -p 5000:5000 fastai-v3
-```
+Data: https://data.mendeley.com/datasets/rscbjbr9sj/2
 
-The guide for production deployment to Render is at https://course.fast.ai/deployment_render.html.
+License: CC BY 4.0
 
-Please use [Render's fast.ai forum thread](https://forums.fast.ai/t/deployment-platform-render/33953) for questions and support.
+Citation: http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
+
+According to the paper cited, the accuracy achieved by them was 92.8%
+
+I have been able to achieve an accuracy of close to 98%
+
+I have built a webservice using the starter code provided by fastai
+
+It can be accessed by visiting https://lung-xray-classifier.onrender.com/
